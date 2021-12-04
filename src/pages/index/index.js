@@ -1,9 +1,23 @@
-//index.js
-//获取应用实例
+// index.js
+// 获取应用实例
 const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
+    motto: 'Hello theree.ooooo...',
+    
+  },
+  // 事件处理函数
+  bindViewTap() {
+    wx.navigateTo({
+      url: '../logs/logs'
+    })
+  },
+  onLoad() {
+    if (wx.getUserProfile) {
+      this.setData({
+        canIUseGetUserProfile: true
+      })
+    }
   },
 })
