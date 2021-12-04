@@ -1,3 +1,3 @@
-for (var i = 0; i < 99; i++) {
+for (var i = 0; i < 5; i++) {
 	console.log(i)
 }
